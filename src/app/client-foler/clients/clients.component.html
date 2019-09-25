@@ -1,0 +1,19 @@
+<div class ="container">
+<div class="labels">
+    <p class = "client label" >Client Name</p>
+    <p class = "client label" >Property Address</p>
+    <p class = "client label" >Property City</p>
+    <p class = "client label" >Asking Price</p>
+    <p class = "client label" >Team Member</p>
+
+</div>
+<ul>
+    <li *ngFor="let client of client" class = "client-list-container" routerLink='/detail/{{client.id}}'routerLinkActive="router-link-active" >
+      <p class = "client" >{{client.name}}</p>
+      <p class = "client" >{{client.propertyAddress}}</p>
+      <p class = "client" >{{client.propertyCity}}</p>
+      <p class = "client" >{{client.askingPrice}}</p>
+      <p class = "client" >{{client.teamMember}}</p>
+  </li>
+  </ul>
+  </div>

@@ -1,0 +1,43 @@
+
+
+<form (submit)="onRegisterSubmit()">
+    <div class="form-group">
+      <label>Company Name</label>
+      <input type="text" [(ngModel)]="companyName" name="companyName" class="form-control" >
+    </div>
+    <div class="form-group">
+      <label>Team Leader Email</label>
+      <input type="text" [(ngModel)]="email" name="email" class="form-control" >
+    </div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" [(ngModel)]="firstName" name="firstName" class="form-control" >
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" [(ngModel)]="lastName" name="lastName" class="form-control" >
+    </div>
+      <div class="form-group">
+        <label>Number of Employees</label>
+        <input type="text" [(ngModel)]="numberOfEmployees" name="numberOfEmployees" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Country</label>
+        <input type="text" [(ngModel)]="country" name="country" class="form-control" >
+      </div>
+
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" [(ngModel)]="username" name="username" class="form-control" ><p *ngIf="companyName">@{{companyName | clearSpaces | lowercase}}.com</p>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="text" [(ngModel)]="password" name="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Verify Password</label>
+        <input type="text" [(ngModel)]="password2" name="password2" class="form-control">
+      </div>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>

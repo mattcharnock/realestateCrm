@@ -1,0 +1,9 @@
+<div class = "nav">
+  <div class="logo-div">
+      <img [routerLink]="['/']" class = "logo-img"src="https://i.imgur.com/4XhaQC7.png" title="source: imgur.com" />
+  </div>
+  <ul class = "nav-items">
+    <div class = "nav-pad"><li [routerLink]="['/dashboard']" routerLinkActive="router-link-active" ><img class = "logo-img" src="https://i.imgur.com/j1cmNn3.png" title="source: imgur.com" /></li></div>
+    <div class = "nav-pad"><li [routerLink]="['/clients']" routerLinkActive="router-link-active" ><img class = "logo-img" src="https://i.imgur.com/6sQ8hKw.png" title="source: imgur.com" /></li></div>
+    <div class = "nav-pad"><li><img class = "logo-img" src="https://i.imgur.com/9IsImp9.png" title="source: imgur.com" /></li></div>
+    <div class = "nav-pad"><li><img (click)='logoutUser()' class = "logo-img" src="https://i.imgur.com/riS2AbX.png" title="source: imgur.com" /></li></div>

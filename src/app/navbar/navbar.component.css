@@ -1,0 +1,47 @@
+div{
+  width: 100%;
+  height: 100vh;
+  background-color: #416ef2;
+  padding-top: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-pad {
+
+  height: 50px;
+
+}
+
+.logo-img{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35px;
+  height: 32px;
+  outline: none;
+  cursor: pointer;
+
+
+}
+
+li {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+  padding: 5px;
+
+}
+
+ul {
+
+  list-style-type: none;
+  padding: 0px;
+
+}
+.logo-div {
+  height: auto;
+  margin-bottom: 40px;
+}
