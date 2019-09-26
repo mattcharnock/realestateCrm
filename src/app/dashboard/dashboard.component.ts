@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UserServiceService} from '../user-service.service';
+import {UserServiceService} from '../services/user-service.service';
 import {Router} from '@angular/router';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -25,11 +26,17 @@ getClient(): void {
 
     }
       );
+
+    this.login.checkLogin().subscribe(data => {
+
+  }
+  );
 }
 
   constructor(
     private route: Router,
     private user: UserServiceService,
+    private login: LoginService,
   ) { }
 
   ngOnInit() {

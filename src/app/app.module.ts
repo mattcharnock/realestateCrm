@@ -13,7 +13,7 @@ import { ReportsComponent } from './dashboard/reports/reports.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SiteLayoutComponent } from './layouts/site-layout/site-layout.component';
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
-import { ClearSpacesPipe } from './clear-spaces.pipe';
+import { ClearSpacesPipe } from './pipes/clear-spaces.pipe';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 

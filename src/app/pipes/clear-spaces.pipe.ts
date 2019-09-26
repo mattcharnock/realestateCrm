@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ClearSpacesPipe implements PipeTransform {
 
   transform(str: string): any {
-    return str.replace(/\s/g, '')
+    return str.replace(/\s/g, '');
   }
 
 }

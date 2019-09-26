@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Company } from '../company';
-import { CompanyRegisterService } from '../company-register.service';
-import { UserServiceService } from '../user-service.service';
-import { ClearSpacesPipe } from '../clear-spaces.pipe';
+import { Company } from '../models/company';
+import { CompanyRegisterService } from '../services/company-register.service';
+import { UserServiceService } from '../services/user-service.service';
+import { ClearSpacesPipe } from '../pipes/clear-spaces.pipe';
 
 @Component({
   selector: 'app-registration',

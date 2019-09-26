@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Client } from '../../client';
+import { Client } from '../../models/client';
 import { CLIENTS } from '../../mock-client';
-import { ClientService } from '../../client.service';
+import { ClientService } from '../../services/client.service';
 
 @Component({
   selector: 'app-clients',
@@ -10,7 +10,7 @@ import { ClientService } from '../../client.service';
 })
 export class ClientsComponent implements OnInit {
 
-  client: Client[]
+  client: Client[];
 
 
   constructor(private clientService: ClientService) { }
@@ -21,7 +21,7 @@ export class ClientsComponent implements OnInit {
 
 
   }
-  getClients(){
+  getClients() {
     this.clientService.getClients()
     .subscribe(data => this.client = data);
   }

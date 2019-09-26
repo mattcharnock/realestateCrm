@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { ClientService } from '../../client.service';
-import { Client } from '../../client';
+import { ClientService } from '../../services/client.service';
+import { Client } from '../../models/client';
 
 @Component({
   selector: 'app-client-detail',
@@ -26,7 +26,7 @@ client: Client;
   }
 
   getClient(): void {
-    const id = +this.route.snapshot.paramMap.get('id')
+    const id = +this.route.snapshot.paramMap.get('id');
 
     this.clientService.getClient(id)
     .subscribe(data => this.client = data);
