@@ -16,6 +16,20 @@ userInfo: any;
 // stores user id for calls
 id = sessionStorage.getItem('key');
 
+checkShit() {
+
+  if( (this.id === null && this.id !== undefined) || (this.id === undefined && this.id !== null) ) {
+
+    this.route.navigateByUrl('/login');
+
+  } else {
+
+    this.getClient();
+
+  }
+
+}
+
 
 // getting user data
 getClient(): void {
@@ -27,10 +41,10 @@ getClient(): void {
     }
       );
 
-    this.login.checkLogin().subscribe(data => {
+   //this.login.checkLogin().subscribe(data => {
 
-  }
-  );
+  // }
+  // );
 }
 
   constructor(
@@ -41,7 +55,7 @@ getClient(): void {
 
   ngOnInit() {
 
-  this.getClient();
+  this.checkShit();
 
 
   }
