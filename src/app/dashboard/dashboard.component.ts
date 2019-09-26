@@ -18,7 +18,7 @@ id = sessionStorage.getItem('key');
 
 checkShit() {
 
-  if( (this.id === null && this.id !== undefined) || (this.id === undefined && this.id !== null) ) {
+  if ( (this.id === null && this.id !== undefined) || (this.id === undefined && this.id !== null) ) {
 
     this.route.navigateByUrl('/login');
 
@@ -41,10 +41,10 @@ getClient(): void {
     }
       );
 
-   //this.login.checkLogin().subscribe(data => {
+    this.login.checkLogin().subscribe(data => {
 
-  // }
-  // );
+  }
+  );
 }
 
   constructor(
@@ -55,7 +55,9 @@ getClient(): void {
 
   ngOnInit() {
 
-  this.checkShit();
+  // this.checkShit();
+
+  this.getClient();
 
 
   }
