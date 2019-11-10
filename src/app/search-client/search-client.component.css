@@ -1,0 +1,23 @@
+.search {
+  position: relative;
+  width: 300px;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+input {
+  width: 100%;
+}
+
+.client {
+  padding: 10px;
+}
+
+.client:hover {
+  background-color: #f2f2f2;
+}

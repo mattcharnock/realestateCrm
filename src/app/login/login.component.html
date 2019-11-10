@@ -1,44 +1,23 @@
-<div class = "image">
-  <div class= "left-cont">
 
-<h1 class = "welcome">Welcome back!</h1>
-  <h2 class = "subhead">Please log in to access a world of endless possibilities</h2>
-  <p class = "or">Or</p>
-  <button class = "signup">Sign up</button>
-
-  <img class = "hills" src = "https://i.imgur.com/aA1WiQF.png"/>
-
-  </div>
-</div>
-
-<div class = "formright">
-  <div class = "pic-cont">
-    <img class = "pic" src="https://i.imgur.com/QJCw1TI.png">
-  </div>
-  <div class="form-contain">
   <form (submit)="onLogin()" >
 
+    <div class = "form-cont">
+
   <div class="form-group">
-    <label class = "label"> Username:</label><br>
-    <div class = div-10px></div>
-    <div class = "input">
-        <input placeholder = "username" type="text" [(ngModel)]="userName" name="userName" class="form-control" >
-    </div>
+
+        <input placeholder = "Username" type="text" [(ngModel)]="userName" name="userName" class="form-control" >
   </div>
 
-  <div class="form-group password">
-    <label class = "label" >Password:</label><br>
-    <div class = div-10px></div>
-    <div class = "input">
-        <input placeholder = "password" type="password" [(ngModel)]="password" name="password" class="form-control" >
+  <div class="form-group ">
+
+        <input placeholder = "Password" type="password" [(ngModel)]="password" name="password" class="form-control password" >
     </div>
-  </div>
 
   <p class = "error" *ngIf="errors">Password or Username is incorrect. Please try again.</p>
 
   <button class = "login-btn" type= "submit">Log in</button>
+    </div>
 
   </form>
+  <div class="div-25px"> </div>
   <p class = "help">Need help logging in? <a>Click here.</a></p>
-  </div>
-  </div>

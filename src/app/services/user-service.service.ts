@@ -18,6 +18,6 @@ export class UserServiceService {
 
   // gets user id
   getUserId(id: string): any {
-    return this.http.get('http://localhost:3000/users/' + id);
+    return this.http.get('http://localhost:3000/users/100' + id, {withCredentials: true});
   }
 }

@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Client</th>
+    <th>Details</th>
+  </tr>
+  <tr *ngFor="let property of properties" >
+    <th>{{property.address.address1}}</th>
+    <th>Name</th>
+    <th><button (click) = 'propertyDetail(property._id)' >Details</button></th>
+
+  </tr>
+
+</table>
+

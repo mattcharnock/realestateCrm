@@ -10,7 +10,8 @@ import { ClientService } from '../../services/client.service';
 })
 export class ClientsComponent implements OnInit {
 
-  client: Client[];
+  client: any;
+  clientLength: number;
 
 
   constructor(private clientService: ClientService) { }
@@ -20,10 +21,15 @@ export class ClientsComponent implements OnInit {
     this.getClients();
 
 
+
   }
   getClients() {
     this.clientService.getClients()
-    .subscribe(data => this.client = data);
+    .subscribe(data => {
+      this.client = data;
+      console.log(this.client);
+      this.clientLength = this.client.length;
+    } );
   }
 
 

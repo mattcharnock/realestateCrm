@@ -38,23 +38,7 @@ export class LoginComponent implements OnInit {
     };
 
     // login service
-    this.loginService.loginUser(user).subscribe(data => {
-
-      this.userId = data._id;
-      console.log(data);
-
-
-    },
-    error => {
-      this.errors = error;
-    },
-
-    // stored user id in a session for refernce
-    () => {
-      sessionStorage.setItem('key', this.userId);
-      this.navigateToDash();
-    }
-  );
+    this.loginService.loginUser(user);
 
   }
 }

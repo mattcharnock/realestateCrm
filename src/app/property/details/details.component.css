@@ -1,0 +1,9 @@
+.property-images {
+  margin-top: 15px;
+  width: 300px;
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 15px;
+}

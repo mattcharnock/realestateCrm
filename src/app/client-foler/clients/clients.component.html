@@ -1,4 +1,5 @@
 <div class ="container">
+
 <div class="labels">
     <p class = "client label" >Client Name</p>
     <p class = "client label" >Property Address</p>
@@ -8,9 +9,9 @@
 
 </div>
 <ul>
-    <li *ngFor="let client of client" class = "client-list-container" routerLink='/detail/{{client.id}}'routerLinkActive="router-link-active" >
-      <p class = "client" >{{client.name}}</p>
-      <p class = "client" >{{client.propertyAddress}}</p>
+    <li *ngFor="let client of client | reverse" class = "client-list-container" routerLink='/detail/{{client.id}}'routerLinkActive="router-link-active" >
+      <p class = "client" >{{client.firstName}}</p>
+      <p class = "client" >{{client.lastName}}</p>
       <p class = "client" >{{client.propertyCity}}</p>
       <p class = "client" >{{client.askingPrice}}</p>
       <p class = "client" >{{client.teamMember}}</p>

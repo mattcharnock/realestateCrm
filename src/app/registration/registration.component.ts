@@ -68,14 +68,19 @@ export class RegistrationComponent implements OnInit {
       password2: this.password2,
     };
 
-    console.log(user);
+    const payload = {
+      company,
+      user
+    };
+
+    // console.log(user);
     // console.log(company)
 
-    this.http.registerCompany(company).subscribe(data => {
+    this.http.registerCompany(payload).subscribe(data => {
       console.log(data);
-      user.companyId = data._id;
+      // user.companyId = data._id;
       // console.log(user.companyId)
-      this.createUser(user);
+      // this.createUser(user);
 
     });
 

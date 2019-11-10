@@ -1,0 +1,10 @@
+<div style = "padding: 20px">
+  <div class="search">
+      <input [(ngModel)]="search" (click)="toggleDropdown()" class = "client-input" type="text">
+      <div *ngIf="dropdown" class = "dropdown">
+        <div *ngFor="let client of clients | listFilterPipe: search" class="client">
+          {{client.firstName}} {{client.lastName}}
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<form (submit)="onAddClient()" >
+
+    <div class = "form-cont">
+
+  <div class="form-group">
+
+        <input placeholder = "First name" type="text" [(ngModel)]="firstName" name="firstName" class="form-control" >
+  </div>
+
+  <div class="form-group ">
+
+        <input placeholder = "Last name" type="text" [(ngModel)]="lastName" name="lastName" class="form-control password" >
+    </div>
+
+  <button class = "login-btn" type= "submit">Log in</button>
+    </div>
+
+  </form>

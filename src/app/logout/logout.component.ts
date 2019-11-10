@@ -12,9 +12,7 @@ export class LogoutComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.logoutUser().subscribe(data => {
-      console.log(data);
-    });
+    this.http.logoutUser();
   }
 
 }

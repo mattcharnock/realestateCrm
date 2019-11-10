@@ -6,10 +6,12 @@
     height: 100vh;
 
 
+
   }
   .route-content {
     position: absolute;
     left: 5%;
     top: 0px;
     width: 95%;
+
   }
